@@ -16,9 +16,59 @@
   position: relative;
 }
 
+.full-name {
+  position: absolute;
+  top: 79px;
+  left: 59px;
+  width: 250px;
+  height: 70px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+  font-size: 26px;
+  color: #e4e4d2;
+}
+
 .avatar {
   clip-path: circle(100px at center);
   position: absolute;
   left: 86px;
   top: 163px;
+}
+
+.tabs {
+  display: flex;
+  margin-top: 70px;
+}
+
+.tabs div {
+  width: 50%;
+  height: 35px;
+  line-height: 35px;
+  text-align: center;
+  font-size: 20px;
+  color: #777;
+}
+
+.tabs div.link-active {
+  color: #df5344;
+  border-bottom: 2px solid #df5344;
+  cursor: pointer;
+}
+
+.content {
+  padding: 0 1rem 1rem 1rem;
+  height: 280px;
+  overflow: auto;
+}
+
+.content ul {
+  line-height: 170%;
+  font-size: 16px;
+}
+
+.content ul a, .content ul a:visited {
+  color: #777;
 }
